@@ -1,0 +1,23 @@
+<!-- HTML structure -->
+<div id="container"></div>
+
+<!-- JavaScript structure-->
+<script>
+    // vqmnit div elements
+    const div = document.createElement('div');
+    
+    // vqmnit  p elements
+    const p = document.createElement('p');
+    
+    // p elementistvis vamatebt class "text" 
+    p.classList.add('text');
+    
+    // p elementistvis vamatebt texts "hello world" 
+    p.textContent = 'hello world';
+    
+    // vamatebt p elements div elementis shignit
+    div.appendChild(p);
+    
+    // div elementis damateba konteinershi div HTML-shi
+    document.getElementById('container').appendChild(div);
+</script>
